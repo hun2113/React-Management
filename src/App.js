@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { render } from '@testing-library/react';
+import { Component } from 'react';
 
-function App() {
+class App extends Component {
+  render()
+  {
   return (
-    <div className="App">
+    <div className="dark-background-color">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} lat="logo" />
+        <h2>lets change </h2>
       </header>
     </div>
-  );
+   );
+  }
 }
 
 export default App;
